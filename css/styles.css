@@ -487,8 +487,7 @@ info-link.link:focus {
   color: #4d5ae5;
   background-color: var(--light);
   cursor: pointer;
-  transition: box-shadow var(--animation), color var(--anim-fas), background-color var(--anim-fas);
-
+  transition: box-shadow var(--animation), color var(--anim-fas), background-color var(--anim-fas), border var(--anim-fas);
 }
 
 
@@ -496,7 +495,6 @@ info-link.link:focus {
 .filter-button:hover {
   background-color: #404bbf;
   color: var(--white-background);
-  text-decoration: none;
   border: 1px solid transparent;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     0px 2px 1px rgba(0, 0, 0, 0.08),
@@ -792,8 +790,9 @@ info-link.link:focus {
   width: 100%;
   height: 4px;
   border-radius: 2px;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
+
 }
 
 .nav-link.current {
@@ -841,11 +840,9 @@ info-link.link:focus {
 
 
 .paragraf-overlay {
-  text-align: center;
   color: #F4F4FD;
-  padding-right: 32px;
-  padding-left: 32px;
-  padding-top: 40px;
+  top: 40px;
+  left: 32px;
   padding-bottom: 164px;
 
   font-family: 'Roboto';
@@ -870,6 +867,7 @@ info-link.link:focus {
   background-color: rgba(46, 47, 66, 0.4);
   width: 100%;
   height: 100%;
+  transition: opacity var(--anim-fas), visibility var(--anim-fas);
 }
 
 .is-hidden {
@@ -911,6 +909,13 @@ info-link.link:focus {
   border-radius: 50%;
   border: none;
   cursor: pointer;
+  /* transition: background-color var(--anim-fas), border var(--anim-fas); */
 }
+
+/* .modal-btn:hover,
+.modal-btn:focus {
+  background-color: #E7E9FC;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+} */
 
 .modal-icon {}

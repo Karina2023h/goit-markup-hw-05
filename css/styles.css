@@ -899,9 +899,10 @@ info-link.link:focus {
 }
 
 .modal-btn {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-left: auto;
-
   width: 24px;
   height: 24px;
   background-color: #E7E9FC;
@@ -909,13 +910,15 @@ info-link.link:focus {
   border-radius: 50%;
   border: none;
   cursor: pointer;
-  /* transition: background-color var(--anim-fas), border var(--anim-fas); */
+  transition: background-color var(--anim-fas), color var(--anim-fas);
 }
 
-/* .modal-btn:hover,
+.modal-btn:hover,
 .modal-btn:focus {
-  background-color: #E7E9FC;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-} */
+  color: #E7E9FC;
+  background-color: #404bbf;
+}
 
-.modal-icon {}
+.modal-icon {
+  fill: currentColor;
+}

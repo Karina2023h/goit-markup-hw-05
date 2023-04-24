@@ -487,7 +487,7 @@ info-link.link:focus {
   color: #4d5ae5;
   background-color: var(--light);
   cursor: pointer;
-  transition: box-shadow var(--animation), color var(--anim-fas), background-color var(--anim-fas), border var(--anim-fas);
+  transition: box-shadow var(--animation), border var(--anim-fas), color var(--anim-fas), background-color var(--anim-fas);
 }
 
 
